@@ -1,4 +1,4 @@
-imgFolder=fullfile("fruits360dataset",'fruits-360');
+imgFolder=fullfile("fruits360dataset",'fruits-360'); //Download fruits360 dataset from https://www.kaggle.com/moltean/fruits and import it to the project and point it to the folder  using fullfile function
 imds=imageDatastore(imgFolder,"LabelSource","foldernames","IncludesubFolders",true);
 
 AppleBraeburn = find(imds.Labels == "Apple Braeburn",1);
